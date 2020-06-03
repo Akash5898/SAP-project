@@ -1,0 +1,48 @@
+<html>
+<title></title>
+<head>
+     <script>
+     function soapRequest(){
+  var str = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dem="http://vendorportal.com/demoLogin">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dem:MT_VendorLogin_Req>
+         <VendorId>10</VendorId>
+      </dem:MT_VendorLogin_Req>
+   </soapenv:Body>
+</soapenv:Envelope>';
+
+        function createCORSRequest(method, url) {
+                    var xhr = new XMLHttpRequest();
+                    if ("withCredentials" in xhr) {
+                        xhr.open(method, url, false);
+                    } else if (typeof XDomainRequest != "undefined") {
+                        alert
+                        xhr = new XDomainRequest();
+                        xhr.open(method, url);
+                    } else {
+                        console.log("CORS not supported");
+                        alert("CORS not supported");
+                        xhr = null;
+                    }
+                    return xhr;
+                }
+        var xhr = createCORSRequest("POST", "http://dxktpipo.kaarcloud.com:50000/XISOAPAdapter/MessageServlet?senderParty=&senderService=BC_VendorLogin1&receiverParty=&receiverService=&interface=SI_VendorLogin_Req&interfaceNamespace=http://vendorportal.com/demoLogin");
+        if(!xhr){
+         console.log("XHR issue");
+         return;
+        }
+
+        xhr.onload = function (){
+         var results = xhr.responseText;
+         console.log(results);
+        }
+
+        xhr.setRequestHeader('Content-Type', 'text/xml');
+        xhr.send(str);
+ }
+ </script>
+ </head>
+ <body>
+      <input type="button" value="SOAP Request" onclick="soapRequest();"/>
+      </body>

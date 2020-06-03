@@ -1,0 +1,69 @@
+ <p class="message"> Already registered? <button type="button" name="button" id="login">&nbsp;Sign In</button> </p>
+
+
+      </form>
+
+
+        <div id="oldProfile">
+          <!-- =============================================================== -->
+          <form action="index.html" method="post" id="oldList">
+            <h1>Login to Your Profile </h1>
+            <h1></h1>
+            <!-- USER NAME -->
+            <div class="float-label">
+              <input type="text" name="" value="" placeholder="Username" id="oldName">
+            </div>
+            <br>
+
+            <!-- PASSWORD -->
+            <div class="float-label">
+              <input type="text" name="" value="" placeholder="Password" id="oldPwd">
+            </div>
+
+            <button type="button" name="button" id="sendData2">Login</button>
+            <p></p>
+
+            <!-- Create profile for unregistered users -->
+            <p class="message"> Not registered? <button type="button" name="button" id="create">&nbsp;Create an account</button> </p>
+
+          </form>
+        </div>
+        <div id="updateProfile" class="row">
+
+          <!-- Update Name -->
+          <div class="col-md-4 user-left">
+            <span><img src="https://github.com/rjoyce6/HW12-Profile/blob/master/img/girl.jpg?raw=true" alt="user image" class="user-image" id="updateImage"></span>
+            <h1 id="updateName"></h1>
+            <p id="updateAge"></p>
+          </div>
+
+          <!-- Update Other information -->
+          <div class="col-md-8 user-right">
+            <h2>Profile <span>Info</span></h2>
+            <div class="user-info">
+              <table>
+                <tr>
+                    <td><p>email address : </p> </td>
+                    <td><p id="updateEmail"></p></td>
+                </tr>
+                <tr>
+                    <td><p>gender :</p></td>
+                    <td><p id="updateGender"></p></td>
+                </tr>
+                <tr>
+                    <td><p>birthday: </p></td>
+                    <td><p id="updateBirth"></p></td>
+                </tr>
+
+
+                </table>
+              </div>
+            </div>
+            <br>
+            <button type="button" name="button" id="signOut">&nbsp;Sign out</button> </p>
+
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

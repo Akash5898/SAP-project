@@ -1,0 +1,64 @@
+<html>
+<head>
+<link rel="stylesheet" href="profile.css">
+</head>
+ <div id = "wrapper">
+      <div id = "content"><br>
+        <h1>Edit Business Profile</h1>
+        <div id = "RightColumn">
+          <form id ="PPicture" action="">
+            <fieldset>
+            <legend>Profile Picture</legend>
+            <div>  
+            <center><img src="http://www.dartmouth.edu/~envs/images/cafe.jpg" alt="" width="270px" height="270px"/>
+            </div>
+            <br>
+            <label for="myPic">Picture URL:</label>
+            <input type="url" name="myPic" id="myPic" size="35" value ="https://cdn2.vectorstock.com/i/1000x1000/25/31/user-icon-businessman-profile-man-avatar-vector-10552531.jpg">
+            </center>
+            </fieldset>
+          </form>
+          
+        </div>
+        <form id="profile" action = "">
+          <fieldset>
+          <legend>Profile Information</legend>
+          <br>
+          <label for="myBName">*Business Name:</label>
+          <input type="text" name="myBName" id="myBName" required value ="Jack's Cafe">
+          <label for="myOFName">*Owner's First Name:</label>
+          <input type="text" name="myOFName" id="myOFName" required value ="Jack">
+          <label for="myOLName">*Owner's Last Name:</label>
+          <input type="text" name="myOLName" id="myOLName" required value ="Harmon">          
+          <label for="myOFName">*Contact's First Name:</label>
+          <input type="text" name="myCFName" id="myCFName" required value ="Bob">
+          <label for="myOFName">*Contact's Last Name:</label>
+          <input type="text" name="myCLName" id="myCLName" required value ="Johnson">
+          <label for="myAddress">*Address:</label>
+          <input type="text" name="myAddress" id="myAddress" required value ="123 Newmon Dr">
+          <label for="myCity">*City:</label>
+          <input type="text" name="myCity" id="myCity" required value ="Spokane">
+          <label for="myState">*State:</label>
+          <input type="text" name="myState" id="myState" size = "2" required value ="Wa">
+          <label for="myZip">*Zip Code:</label>
+          <input type="text" name="myZip" id="myZip" size = "5" required value ="99201">
+          <label for="myPhone">*Phone Number:</label>
+          <input type="tel" name="myPhone" id="myPhone" size="12" required value ="219-656-0141">
+          <label for="myEmail">*E-Mail:</label>
+          <input type="email" name="myEmail" id="myEmail" size="30" required value ="JHarmon@gmail.com">
+          <label for="mySEmail">Secondary E-Mail:</label>
+          <input type="email" name="mySEmail" id="mySEmail" size="30" value ="Jack.Harmon@hotmail.com">
+          <label for="myWeb">Business Website:</label>                 
+          <input type="url" name="myWeb" id="myWeb" value ="www.jcafe.yum">
+          <label for="myBio">Biography:</label>
+          <textarea name"myBio" id="myBio" rows="2" cols="32" placeholder= ""></textarea>
+          </fieldset>
+        </form>
+        <br>
+      </div>
+      <div id = "bottom">
+        <center><input type="submit" value="Save Changes"/></center>
+      </div>
+    </div>
+</body>
+</html>
